@@ -49,6 +49,19 @@ finally, go to kitsoft/SignalProcessingWebServer  and type :
 ```
 server will be available on localhost:3700 
 
+### for OSX users ###
+
+For installing `mongodb`, please refer to the [doc](https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-os-x/). The easiest way is to do that via `homebrew`. Then, when you're all set up, type on the shell :
+
+```
+ mongod 
+```
+
+finally, go to kitsoft/SignalProcessingWebServer  and type :
+```
+ node --max_old_space_size=100000 --max_executable_size=100000 --optimize-for_size server/index.js
+```
+server will be available on localhost:3700 
 
 ### if u have some problems with mongod ###
 
